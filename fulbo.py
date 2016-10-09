@@ -5,11 +5,15 @@ import subprocess
 import os
 from datetime import datetime
 from lxml.html import parse
+
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 #import ConfigParser
 
-from fpt import FPT
+from farg import FArg as FPT
+# from fpt import FPT
 from yt import YT
 
 class Handlers:
@@ -112,7 +116,7 @@ class AppBuilder:
 		# próximos partidos 
 		matches_list = FPT().partidos()
 		self.update_list(self.partidos, matches_list[0], matches_list[1], matches_list[2], matches_list[3], matches_list[4])
-		print 'Listo. (' + datetime.now().strftime('%H:%M') + ')'
+		print 'Listo (a las ' + datetime.now().strftime('%H:%M') + ' hs).'
 
 	
 	def update_list(self, partidos, partido, dia, horario, tv, torneo):

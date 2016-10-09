@@ -6,7 +6,7 @@ import sys
 import re
 from lxml.html import parse
 from yt import YT
-            
+
 
 class FPT():
     
@@ -20,7 +20,7 @@ class FPT():
             busqueda        = 'Boca'
         elif busqueda   == 'Gallis':
             busquda         = 'River'
-        elif busqueda   == 'Rojo':
+        elif busqueda   == 'Rojo': # xD
             busqueda        = 'Independiente'
         
     else:
@@ -36,10 +36,12 @@ class FPT():
     lista_c = []
     lista_de_partidos = []
  
+    data_source = 'http://www.futbolparatodos.com.ar/programacion-de-partidos/'
+
     def __init__(self):
         print "\rCargando próximos partidos...",
         # partidos programados "NO COMENZADOS"
-        dp = parse('http://www.futbolparatodos.com.ar/programacion-de-partidos/').getroot()
+        dp = parse(self.data_source).getroot()
             
         for p, f, h, t, c in zip(dp.cssselect('.programacion-partido')[1:-1], dp.cssselect('.fecha')[1:-1], dp.cssselect('.hora')[1:-1], dp.cssselect('.transmite')[1:-1], dp.cssselect('.torneo')[1:-1]):
             
