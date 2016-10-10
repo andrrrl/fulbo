@@ -1,6 +1,6 @@
 # Fulbo
 
-### [ES]
+## [ES]
 - Muestra el calendario de partidos de todo el Fútbol Argentino, incluye fechas, horarios, televisación e incluso la posibilidad de ver los partidos en streaming.
 - Glade GUI
 
@@ -11,7 +11,8 @@
 - `$ python fulbo.py`
 
 
-### [EN]
+
+## [EN]
 - Shows Argentinian football (soccer) matches info, including match day, hour, and even can start video stream of supported matches.  
 - Glade GUI
 
