@@ -13,7 +13,7 @@
 
 
 ## [EN]
-- Shows Argentinian football (soccer) matches info, including match day, hour, and even can start video stream of supported matches.  
+- Shows Argentinian football (soccer) matches info, including match day, hour, and even can start video stream of available matches.  
 - Glade GUI
 
 ### Requirements
