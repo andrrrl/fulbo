@@ -5,8 +5,7 @@
 - Glade GUI
 
 ### Requerimientos
-- [lxml](http://www.lxml.de) para interpretar HTML: `pip install lxml` o `easy_install lxml`
-- [gi](https://pypi.python.org/pypi/gi/) para crear interfaces gráficas GTK:  `pip install gi` o `easy_install gi`
+- [lxml](http://www.lxml.de): `pip install lxml` o `easy_install lxml`
 
 ### Uso:
 - `$ python fulbo.py`
@@ -18,8 +17,7 @@
 - Glade GUI
 
 ### Requirements
-- [lxml](http://www.lxml.de) for parsing HTML: `pip install lxml` or `easy_install lxml`
-- [gi](https://pypi.python.org/pypi/gi/) for creating GUI: `pip install gi` or `easy_install gi`
+- [lxml](http://www.lxml.de): `pip install lxml` or `easy_install lxml`
 
 ### Usage:
 - `$ python fulbo.py`
